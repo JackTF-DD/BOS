@@ -2,9 +2,9 @@
 
 ## Project boundary
 
-- Project: BOS (`bos`); client: PROJECT_CLIENT (confirm before use). Treat the repository as project-scoped and client-confidential where applicable.
+- Project: Biodiversity Offset Scheme (BOS, `bos`), part of DCCEEW. This repository supports ad-hoc work across its Microsoft Fabric platform. Treat the repository as project-scoped and client-confidential where applicable.
 - The editable working copy is `/home/jackfoster/hermes-work/repos/bos`. Resolve the actual checkout/worktree before editing; do not edit a separate mirrored copy.
-- Keep authored source in repository-owned development folders. If `data/` is used, treat it as reference-only: read for comparison and verification, never modify, stage, generate into, or deploy from it. Specify its actual provenance and refresh procedure in a project runbook; remove this rule if there is no `data/`.
+- Keep authored Fabric item definitions, notebooks, and scripts in repository-owned development folders; keep investigations in `docs/investigations/`. `data/` is a pull-only Git submodule of the live Fabric workspace and is reference-only: read for comparison and verification, never modify, generate into, commit inside, push, or deploy from it. Its provenance, authentication boundary, and refresh procedure are in `docs/runbooks/DATA-SUBMODULE.md`; stage only the parent gitlink for an explicitly requested pinned-revision update.
 - Put transient analysis and non-deliverable working files in ignored `.agent/scratch/`. Keep code, tasks, and documentation distinct from snapshots and exports.
 
 ## Working method
@@ -17,7 +17,7 @@
 
 ## Source and publication boundary
 
-- PROJECT_SOURCE_BOUNDARY: name the authoritative authored folders and the reference-only inputs here. Do not copy another project's Fabric/submodule rules without checking this project's actual source arrangement.
+- Authored work belongs in this repository outside `data/`; the live-workspace clone under `data/` is a separate reference input, not the source to edit or publish from. Confirm the final authored folder layout and clone placement before populating them. Do not copy another project's Fabric/submodule rules without checking this project's actual source arrangement.
 - Git commits and pushes are not deployments. Any direct external publication or execution requires an explicit request, exact target resolution, a preservation/rollback plan where applicable, and read-back of the affected target before reporting success.
 - Avoid changes to shared or live environments as part of ordinary repository tasks. Keep runtime verification and local checks as separate claims.
 

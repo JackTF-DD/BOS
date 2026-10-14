@@ -1,0 +1,4 @@
+[submodule "data"]
+	path = data
+	url = https://nswdpie-cs-data-analytics.visualstudio.com/DTP%20MS%20Fabric%20Data%20Consolidation%20and%20Enhancement%20Project/_git/DTP%20MS%20Fabric%20Data%20Consolidation%20and%20Enhancement%20Project
+	branch = dev

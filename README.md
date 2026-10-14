@@ -1,7 +1,7 @@
-# BOS
+# Biodiversity Offset Scheme (BOS)
 
 ## Project boundary
-Describe the purpose, ownership, reference-only data, and where authored work belongs. Link `AGENTS.md` for agent boundaries.
+This repository supports ad-hoc work across the Biodiversity Offset Scheme's Microsoft Fabric platform, part of DCCEEW. It holds authored Fabric item definitions, notebooks, scripts, and investigation notes. `data/` is reserved for a read-only Git clone of the live Fabric workspace; do not author or publish from that clone. See [`AGENTS.md`](AGENTS.md) for agent boundaries.
 
 ## Repository map
 | Path | Purpose |
@@ -10,9 +10,9 @@ Describe the purpose, ownership, reference-only data, and where authored work be
 | `notebooks/`, `pipelines/`, `warehouse/` | Authored implementation, if applicable |
 | `semantic/`, `reporting/` | Models and reports, if applicable |
 | `tests/` | Focused checks |
-| `docs/` | Decisions, investigations, and runbooks |
+| `docs/` | Investigation notes, decisions, and runbooks |
 | `tasks/` | Work records |
-| `data/` | Read-only reference inputs, if applicable |
+| `data/` | Read-only clone of the live Fabric workspace; exact clone placement and provenance pending |
 
 Remove irrelevant rows/directories; document the actual code layout.
 

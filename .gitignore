@@ -3,6 +3,9 @@
 .agent/scratch/
 .agent/logs/
 
+# The live Fabric workspace is tracked only as a submodule gitlink at data/.
+# Never stage files within the submodule.
+
 # Build/editor and platform artefacts
 .venv/
 venv/
