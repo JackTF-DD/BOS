@@ -1,0 +1,23 @@
+# Local worktrees and transient agent files
+.worktrees/
+.agent/scratch/
+.agent/logs/
+
+# Build/editor and platform artefacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+*.tmp
+*~
+.#*
+.~lock.*#
+
+# Generated exports (tailor to the project)
+artifacts/exports/
